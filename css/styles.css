@@ -1,0 +1,238 @@
+
+/* div{
+  background-color: #17D7A0;
+}
+/*
+
+/*
+divs which are just boxes that contain our elements (p,h,img....)
+we can change the width and height of a div ( ex : {width : 600px (or) 50% },....)
+(we can also specify the border ( border can be solid) the edges of the box(div) not our exact element {border-width : 0px 10px 20px 30px;})
+padding : the distance between our element and the inner borders of the box
+margin : the distance between our box and any other element or box from the outside
+)*/
+
+body{
+  /* if there is code on your website to display, use monospace*/
+  color : #40514E;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  margin: 0;
+  text-align: center;
+}
+
+/* Note : An element inherits the font size of its parent */
+
+h1{
+  /*dynamic font size : 100% ----> 16 px so to get 90 px we need 562.5%
+  em or M is 16px = 100% so we can put 5.625 em instead of 562.5%
+  rem means ignore parent settings for fonts size : 5.625rem (recommended)
+  */
+  color : #11629B;
+  font-size :5.625rem;
+  line-height : 2;
+  font-family: 'Sacramento', cursive;
+  margin-top: 0;
+  /*width : 10%;
+  margin : 0 auto 0 auto; center an element (clockwise) or use margin : 0 in parent element if it doesn't have a width
+  or margin : 0(which are left and right) auto(top and bottom)*/
+  margin : 50px auto 0 auto;
+  padding-bottom: 10px;
+}
+
+h2{
+  /*#66BFBF*/
+  color : #66BFBF;
+  /* we want h2 to be 40 px and each and 1em is 16 pixels so 40/16 = 2.5em which is 2.5rem*/
+  font-size: 2.5rem;
+  font-family: 'Montserrat',sans-serif;
+  padding-bottom: 10px;
+  /*font-weight : normal;*/
+}
+
+h3{
+    color : #11999E;
+    font-family: 'Montserrat',sans-serif;
+}
+
+p{
+  line-height: 2;
+}
+
+hr{
+  border : dotted #b3e5fc 8px;
+  /*17d7a0*/
+  border-bottom: none;
+  width : 5%;
+  margin : 100px auto;
+}
+
+a{
+  color : #11629B;
+  /*11999E
+  11543E*/
+  font-family: 'Merriweather', serif;
+  margin : 10px 20px;
+  text-decoration: none;
+}
+
+a:hover{
+  color : #EAF6F6;
+}
+
+.top-container{
+  position: relative;
+  padding-top: 100px;
+  background-color: #E4F9F5;
+  /*17d7a0*/
+}
+
+.middle-container{
+  margin:100px 0;
+}
+
+.bottom-container{
+  background-color: #66BFBF;
+  padding : 50px 0 20px;
+}
+
+.skill-row{
+  width : 50%;
+  margin : 100px auto 100px auto;
+  text-align : left;
+}
+
+.img-laptop{
+  float : left; /* makes the text in the div float or wrap around the image in this case to the left */
+  width : 25%;
+  margin-right: 30px;
+  margin-top : 50px;
+}
+
+.img-multitask{
+  float : right; /* most commonly used and misused so use when only neccessary (wrapping text around an element and not position, instead use position and display property if u want to position, so only use float if neccessary) */
+  width : 25%;
+  margin-left: 30px;
+}
+
+/*.img-laptop-description{
+
+  makes only the title wrap around the image not the whole text as well
+  clear : left;
+}
+
+.img-multitask-description{
+  clear : right;
+}
+*/
+
+.pro
+{
+  text-decoration: underline;
+}
+
+.intro{
+  width : 30%; /*This wrapped the parapgraph as well as sizing it smaller*/
+  margin : auto;
+}
+
+.contact-message{
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.copyright{
+  color : #EAF6F6;
+  font-size : 0.75rem;
+  padding : 20px 0 10px 0;
+}
+
+/*h and p are block display elements, they block everything and take up the rest of the line till the end of the page
+to solve this issue we use the property span which spans another element or word and still be on the same line, example :
+in other means span highlight part of a sentence (inline display element : does not block other elements from occuring on the same line)
+
+but we can't change a span width
+so the solution is to use the display property ( inline block which is best of both words)
+display : inline
+          block
+          inline-block
+          none (gets rid of our element just like the property visibility : hidden, the diff is that visibility the place hidden gets reserved)
+
+CSS static and relative position :
+all html elements have a static position by default
+relative position in css :
+img{
+position : relative;
+right : 20 px
+}
+(this moves the image !LEFT! by 20 px relativwe to the position it was before)
+absolute position :
+we position the element relative to its parent (most likely a div)
+fixed position : makes an element fixed while scrolling (using a navigation bar for example)
+element{
+position : fixed;
+top : 0;
+}
+*/
+.cropped-pic{
+  height : 200px;
+  width : 200px;
+}
+
+.top-cloud
+{
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.bottom-cloud
+{
+  position: absolute; /* to put the mountain in the middle alone */
+  left: 250px;
+  bottom: 300px;
+}
+
+/* note : 7ot she3ar l email 7ad l contact me l btft7 l outlook w bt7t l email l elak
+linked in : logo te3 l linked in
+7ot incon morabba3at la kol shi bel contact me
+7ot foragh ben l soura wel background cover l fo2 l mountain*/
+
+.btn {
+   background: #11CDD4;
+   background-image: -webkit-linear-gradient(top, #11CDD4, #119999);
+   background-image: -moz-linear-gradient(top, #11CDD4, #119999);
+   background-image: -ms-linear-gradient(top, #11CDD4, #119999);
+   background-image: -o-linear-gradient(top, #11CDD4, #119999);
+   background-image: -webkit-gradient(to bottom, #11CDD4, #119999);
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   color: #FFFFFF;
+   font-family: 'Montserrat',sans-serif;
+   font-size: 20px;
+   font-weight: 100;
+   padding: 15px;
+   -webkit-box-shadow: 0 0 20px 0 #000000;
+   -moz-box-shadow: 0 0 20px 0 #000000;
+   box-shadow: 0 0 20px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.btn:hover {
+   border: groove #0FA8C1 2px;
+   background: #30E3CB;
+   background-image: -webkit-linear-gradient(top, #30E3CB, #24C4AD);
+   background-image: -moz-linear-gradient(top, #30E3CB, #24C4AD);
+   background-image: -ms-linear-gradient(top, #30E3CB, #24C4AD);
+   background-image: -o-linear-gradient(top, #30E3CB, #24C4AD);
+   background-image: -webkit-gradient(to bottom, #30E3CB, #24C4AD);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
